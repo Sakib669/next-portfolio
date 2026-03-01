@@ -1,0 +1,3079 @@
+[
+  {
+    "id": "TC001",
+    "title": "Hero renders with name gradient text and primary CTAs",
+    "description": "Verifies the home hero section loads and shows the key identity text and CTA buttons.",
+    "category": "Hero Section with Animations",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"hero section\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Shafiqul Islam Sakib\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"View My Work\" button is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Get In Touch\" button is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Particles background is visible behind hero content",
+    "description": "Verifies the particles background component appears on the home hero and does not block primary content visibility.",
+    "category": "Hero Section with Animations",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"particles background\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Shafiqul Islam Sakib\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"View My Work\" button is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Get In Touch\" button is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Navigate to Skills via 'View My Work' CTA",
+    "description": "Verifies the 'View My Work' button routes the user from the hero section to the Skills page.",
+    "category": "Hero Section with Animations",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"View My Work\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/skills\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"Skills\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Skills\" page heading is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Navigate to Contact via 'Get In Touch' CTA",
+    "description": "Verifies the 'Get In Touch' button routes the user from the hero section to the Contact page.",
+    "category": "Hero Section with Animations",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Get In Touch\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/contact\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"Contact\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"contact form\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Scroll indicator is visible and page scroll reveals next section",
+    "description": "Verifies the hero scroll indicator is shown and scrolling moves the user to content below the hero.",
+    "category": "Hero Section with Animations",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"scroll indicator\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the next section below the hero"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"statistics counters\" section is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"featured projects\" section is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Counters animate from 0 to target values when statistics section becomes visible",
+    "description": "Verifies that each statistic counter starts at 0 and animates upward when the statistics section scrolls into view.",
+    "category": "Statistics Counter Animation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the statistics section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"0\" is visible within the statistics counters area"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the counters to animate"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"0\" is not visible within the statistics counters area"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify at least one non-zero number is visible within the statistics counters area"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "All expected statistic labels are visible in the statistics section",
+    "description": "Verifies that the statistics section displays all intended statistic tiles (experience, projects, technologies, satisfaction) with their labels visible.",
+    "category": "Statistics Counter Animation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the statistics section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Years\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Projects\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Technologies\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Satisfaction\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Icon elements for each statistic are visible when the statistics section is in view",
+    "description": "Verifies that each statistic tile shows an icon and that icons are visible alongside the counters when the section is displayed.",
+    "category": "Statistics Counter Animation",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the statistics section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a statistic icon\" is visible in the first statistic tile"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a statistic icon\" is visible in the second statistic tile"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a statistic icon\" is visible in the third statistic tile"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a statistic icon\" is visible in the fourth statistic tile"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Counters do not animate while the statistics section is not visible (before scrolling)",
+    "description": "Verifies that counters remain at their initial state until the statistics section is actually scrolled into view.",
+    "category": "Statistics Counter Animation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"statistics section\" is not visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"0\" is not visible within the hero section area"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the statistics section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"0\" is visible within the statistics counters area"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Fast scroll past statistics then scroll back triggers counter animation on visibility",
+    "description": "Verifies that if the user scrolls past quickly and then returns to the statistics section, the counters animate upon becoming visible.",
+    "category": "Statistics Counter Animation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll quickly past the statistics section to content below it"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"statistics section\" is not visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll back to the statistics section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"statistics section\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the counters to animate"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify at least one non-zero number is visible within the statistics counters area"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Counters reach a stable final value after animation completes",
+    "description": "Verifies that after the animation finishes, the counters stop changing and remain stable on screen.",
+    "category": "Statistics Counter Animation",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the statistics section"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the counters to animate"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify at least one non-zero number is visible within the statistics counters area"
+      },
+      {
+        "type": "action",
+        "description": "Wait for 2 seconds"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the same non-zero number is still visible within the statistics counters area"
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Statistics section remains readable and counters remain visible after animation",
+    "description": "Verifies that after the counter animation runs, the statistics numbers and labels remain visible and do not disappear.",
+    "category": "Statistics Counter Animation",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the statistics section"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the counters to animate"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify at least one non-zero number is visible within the statistics counters area"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Years\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Projects\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "Featured projects section shows three project preview cards on Home",
+    "description": "Verifies the Home page renders the featured project previews with visible project names and card content.",
+    "category": "Featured Projects Preview",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Featured Projects\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"MernEats\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Bistro Boss\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"LearnGo\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"View All Projects\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "MernEats card displays expected technology badges",
+    "description": "Verifies the MernEats project card shows key technology badges in the UI.",
+    "category": "Featured Projects Preview",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"MernEats\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"React\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Node.js\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"MongoDB\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"View All Projects\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC015",
+    "title": "Keyboard navigation reaches View All Projects button and it is actionable",
+    "description": "Verifies the View All Projects control can be reached via keyboard focus and can be activated without breaking the page state.",
+    "category": "Featured Projects Preview",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"View All Projects\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Press \"Tab\""
+      },
+      {
+        "type": "action",
+        "description": "Press \"Tab\""
+      },
+      {
+        "type": "action",
+        "description": "Press \"Enter\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"View All Projects\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC016",
+    "title": "About page loads and shows the personal story section",
+    "description": "Verifies that the About page loads successfully and the personal story content is visible to the user.",
+    "category": "About Page Personal Story",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/about\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"About\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"About\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Education\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Languages\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC017",
+    "title": "Gradient profile image placeholder is visible on the About page",
+    "description": "Verifies that the profile image area is displayed as a visible placeholder rather than a broken or missing element.",
+    "category": "About Page Personal Story",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/about\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"profile image\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"profile card\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"gradient placeholder\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC018",
+    "title": "Personal story text is readable and remains visible while scrolling",
+    "description": "Verifies that the personal story content is readable and stays present as the user scrolls through the About page sections.",
+    "category": "About Page Personal Story",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"personal story\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Education\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Education\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Languages\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Languages\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC019",
+    "title": "About page remains usable with no real profile photo (placeholder present)",
+    "description": "Verifies that the profile section is not broken and shows a visible placeholder instead of a missing image indicator.",
+    "category": "About Page Personal Story",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"profile image\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"gradient placeholder\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"About\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"personal story\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC020",
+    "title": "Keyboard scrolling does not break About page content visibility",
+    "description": "Verifies that basic keyboard-based navigation (Page Down) can be used without losing key About page content visibility.",
+    "category": "About Page Personal Story",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"personal story\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Press \"PageDown\" key"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Education\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Press \"PageDown\" key"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Languages\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC021",
+    "title": "About page shows the MernEats project details including features and tech stack",
+    "description": "Verifies the project showcase renders MernEats with its details, feature list, and technology stack information.",
+    "category": "Project Showcase",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the project showcase section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"MernEats\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Features\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Tech Stack\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify at least one technology badge/icon is visible within the MernEats project card"
+      }
+    ]
+  },
+  {
+    "id": "TC022",
+    "title": "Live badge is visible on projects marked as active",
+    "description": "Verifies that projects intended to be active display a visible \"Live\" badge in the project card.",
+    "category": "Project Showcase",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the project showcase section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Live\" is visible on at least one project card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the \"Live\" badge appears within a project card area (not in the page header/footer)"
+      }
+    ]
+  },
+  {
+    "id": "TC023",
+    "title": "Bistro Boss project details are visible with features and tech stack",
+    "description": "Verifies the project showcase renders Bistro Boss with its details, feature list, and technology stack information.",
+    "category": "Project Showcase",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the project showcase section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Bistro Boss\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Features\" is visible within the Bistro Boss project card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Tech Stack\" is visible within the Bistro Boss project card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify at least one technology badge/icon is visible within the Bistro Boss project card"
+      }
+    ]
+  },
+  {
+    "id": "TC024",
+    "title": "LearnGo project details are visible with features and tech stack",
+    "description": "Verifies the project showcase renders LearnGo with its details, feature list, and technology stack information.",
+    "category": "Project Showcase",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the project showcase section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"LearnGo\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Features\" is visible within the LearnGo project card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Tech Stack\" is visible within the LearnGo project card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify at least one technology badge/icon is visible within the LearnGo project card"
+      }
+    ]
+  },
+  {
+    "id": "TC025",
+    "title": "Clicking Bistro Boss project card does not break the page if no external link is configured",
+    "description": "Verifies that clicking the Bistro Boss project card does not cause navigation errors or a broken state when an external demo link is absent or not configured.",
+    "category": "Project Showcase",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the project showcase section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Bistro Boss project card is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click the Bistro Boss project card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/about\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Bistro Boss\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC026",
+    "title": "View education details on About page",
+    "description": "Verifies the Education section shows the degree, institution, and expected graduation year.",
+    "category": "Education and Languages",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"About\""
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Education\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"B.Sc. in Electrical and Electronics Engineering\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the education institution name is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the expected graduation year text is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC027",
+    "title": "Education section remains readable after additional scrolling",
+    "description": "Verifies education details remain visible and readable when the user scrolls within the About page.",
+    "category": "Education and Languages",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Education\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"B.Sc. in Electrical and Electronics Engineering\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll down within the About page"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Education\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"B.Sc. in Electrical and Electronics Engineering\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC028",
+    "title": "View languages list on About page",
+    "description": "Verifies the Languages section lists English, Bengali, and Hindi.",
+    "category": "Education and Languages",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Languages\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"English\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Bengali\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Hindi\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Language proficiency\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC029",
+    "title": "Verify each language shows a proficiency indicator",
+    "description": "Verifies each listed language has a visible proficiency level indicator displayed next to it or beneath it.",
+    "category": "Education and Languages",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Languages\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the proficiency indicator for \"English\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the proficiency indicator for \"Bengali\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the proficiency indicator for \"Hindi\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text indicating proficiency levels is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC030",
+    "title": "Education and Languages sections are both discoverable on About page",
+    "description": "Verifies users can locate both Education and Languages sections via scrolling and see their headers.",
+    "category": "Education and Languages",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Education\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Education\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Languages\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Languages\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"English\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC031",
+    "title": "Language proficiency indicators display without missing content",
+    "description": "Verifies the Languages section renders without missing labels or empty indicators.",
+    "category": "Education and Languages",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Languages\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"English\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the proficiency indicator for \"English\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Bengali\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the proficiency indicator for \"Bengali\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC032",
+    "title": "Education details include institution and graduation year together",
+    "description": "Verifies the Education entry provides both institution name and expected graduation year in the same visible entry.",
+    "category": "Education and Languages",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Education\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"B.Sc. in Electrical and Electronics Engineering\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the education institution name is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the expected graduation year text is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the institution and graduation year are visible within the Education entry"
+      }
+    ]
+  },
+  {
+    "id": "TC033",
+    "title": "Skill bars animate when scrolled into view on Skills page",
+    "description": "Verifies that skill bars start at 0% and animate to their displayed percentages when the skills section becomes visible.",
+    "category": "Animated Skill Bars",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Skills\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the skills section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a skill percentage value (e.g., a number ending with %)\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"at least one skill bar fill (colored filled portion)\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"multiple skill bars\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC034",
+    "title": "Technology icons are visible next to skill names",
+    "description": "Verifies that each skill shows an associated technology icon next to the skill name.",
+    "category": "Animated Skill Bars",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the skills section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a technology icon next to a skill name\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"multiple technology icons across the skills list/grid\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a skill name label\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a skill percentage value (ending with %)\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC035",
+    "title": "Skill categories are visible and group skills logically",
+    "description": "Verifies that skill categories (Frontend, Backend, Tools, Specializations) are present and that skills are shown under these headings.",
+    "category": "Animated Skill Bars",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the skills section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Frontend\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Backend\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Tools\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Specializations\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"skills listed under at least one category heading\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC036",
+    "title": "Skill percentage values are visible for skills",
+    "description": "Verifies that each skill displays a readable percentage value alongside the bar.",
+    "category": "Animated Skill Bars",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the skills section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a skill percentage value (ending with %)\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a second skill percentage value (ending with %)\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a skill bar corresponding to a visible percentage\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"skill name text next to the percentage\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC037",
+    "title": "Skills section remains stable after repeated scrolling (no disappearance or layout break)",
+    "description": "Verifies the skills UI remains visible and intact after scrolling away and back, ensuring animations/visibility states do not break the layout.",
+    "category": "Animated Skill Bars",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the skills section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"multiple skill bars\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the top of the page"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the skills section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"multiple skill bars\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"skill percentage values (ending with %)\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC038",
+    "title": "Technology Grid renders with 18 technology cards on Skills page",
+    "description": "Verifies the Skills page shows the full technology grid with all expected items visible to the user.",
+    "category": "Technology Grid",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/skills\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Technologies\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Next.js\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"React\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"TypeScript\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Tailwind CSS\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Node.js\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC039",
+    "title": "Technology card hover reveals interactive emphasis (scale/shadow) without losing label",
+    "description": "Verifies hovering a technology card keeps the technology name visible and the card remains stable and readable.",
+    "category": "Technology Grid",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"React\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the technology grid section"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"React\" technology card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"React\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"React\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Technologies\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC040",
+    "title": "Hover interaction does not navigate away or change route",
+    "description": "Verifies that interacting with a technology card does not trigger navigation or route changes.",
+    "category": "Technology Grid",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/skills\""
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the technology grid section"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Next.js\" technology card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/skills\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Next.js\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC041",
+    "title": "Technology names are readable below icons for multiple grid items",
+    "description": "Verifies several technology cards display their names as visible text (not icons only).",
+    "category": "Technology Grid",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the technology grid section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"JavaScript\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"HTML\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"CSS\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Git\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"GitHub\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Figma\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC042",
+    "title": "Technology Grid content remains visible after scroll away and back",
+    "description": "Verifies the grid remains present and readable after user scroll interactions (no disappearing content).",
+    "category": "Technology Grid",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the technology grid section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"TypeScript\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the bottom of the page"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the technology grid section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"TypeScript\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"React\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC043",
+    "title": "Staggered fade-in on page load does not block reading grid content",
+    "description": "Verifies the grid becomes readable shortly after page load and key technology names appear without user interaction.",
+    "category": "Technology Grid",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Technologies\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Wait for 1 second"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Next.js\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"React\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"TypeScript\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC044",
+    "title": "Core competencies section shows expected cards on Skills page",
+    "description": "Verifies the core competencies section is present and displays the expected competency cards with visible titles.",
+    "category": "Core Competencies",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"Skills\""
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Core Competencies\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Core Competencies\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Full Stack Development\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Payment Integration\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"State Management\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC045",
+    "title": "Competency card reveals readable description content",
+    "description": "Verifies each key competency card has a visible, readable description on the page.",
+    "category": "Core Competencies",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Core Competencies\" section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Full Stack Development\" competency card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Full Stack Development\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a description paragraph under \"Full Stack Development\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Payment Integration\" competency card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a description paragraph under \"Payment Integration\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC046",
+    "title": "Each competency card shows an icon alongside its title",
+    "description": "Verifies competency cards include a visible icon element near the competency title.",
+    "category": "Core Competencies",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Core Competencies\" section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Full Stack Development\" competency card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an icon is visible within the \"Full Stack Development\" competency card"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Payment Integration\" competency card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an icon is visible within the \"Payment Integration\" competency card"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"State Management\" competency card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an icon is visible within the \"State Management\" competency card"
+      }
+    ]
+  },
+  {
+    "id": "TC047",
+    "title": "Keyboard navigation can focus a competency card and keep content readable",
+    "description": "Verifies a user can tab to a competency card and the focused card remains readable with a visible focus state.",
+    "category": "Core Competencies",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Core Competencies\" section"
+      },
+      {
+        "type": "action",
+        "description": "Press Tab"
+      },
+      {
+        "type": "action",
+        "description": "Press Tab"
+      },
+      {
+        "type": "action",
+        "description": "Press Tab"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a focus indicator is visible on a competency card in the \"Core Competencies\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the focused competency card’s title text is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC048",
+    "title": "Keyboard navigation reaches all key competency cards without trapping focus",
+    "description": "Verifies repeated tabbing can move focus through multiple competency cards (no keyboard trap) within the core competencies section.",
+    "category": "Core Competencies",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Core Competencies\" section"
+      },
+      {
+        "type": "action",
+        "description": "Press Tab"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a focus indicator is visible on a competency card in the \"Core Competencies\" section"
+      },
+      {
+        "type": "action",
+        "description": "Press Tab"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a focus indicator is visible on a different competency card in the \"Core Competencies\" section"
+      },
+      {
+        "type": "action",
+        "description": "Press Tab"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a focus indicator is visible on another competency card in the \"Core Competencies\" section"
+      }
+    ]
+  },
+  {
+    "id": "TC049",
+    "title": "Core competencies remain visible and intact after scrolling away and back",
+    "description": "Verifies the competency cards continue to render correctly after the user scrolls away and returns to the section.",
+    "category": "Core Competencies",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Core Competencies\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Full Stack Development\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the bottom of the Skills page"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Core Competencies\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Payment Integration\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"State Management\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC050",
+    "title": "Submit contact form successfully and see spinner, success message, and reset",
+    "description": "Verifies a valid contact form submission shows loading state, success feedback, and clears fields afterward.",
+    "category": "Contact Form",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Contact\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Test User\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"test.user@example.com\" into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Portfolio Inquiry\" into the subject field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Hello, I would like to discuss a project opportunity.\" into the message textarea"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Send Message\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"loading spinner\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC051",
+    "title": "Confirm success feedback appears after simulated submission completes",
+    "description": "Verifies a success message is shown after the submission loading period ends.",
+    "category": "Contact Form",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Test User\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"test.user@example.com\" into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Hello\" into the subject field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"This is a test message.\" into the message textarea"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Send Message\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Message sent\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Thank you\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC052",
+    "title": "Validation error when email is left empty",
+    "description": "Verifies client-side validation blocks submission and shows an email-required error when email is blank.",
+    "category": "Contact Form",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Test User\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Missing Email\" into the subject field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Testing required email validation.\" into the message textarea"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Send Message\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Email\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"required\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC053",
+    "title": "Validation error when email format is invalid",
+    "description": "Verifies client-side validation blocks submission and shows an invalid email error for malformed email input.",
+    "category": "Contact Form",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Test User\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"not-an-email\" into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Invalid Email\" into the subject field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Testing invalid email format.\" into the message textarea"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Send Message\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"valid email\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"email field\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC054",
+    "title": "Prevent double submission while loading",
+    "description": "Verifies that while the loading spinner is shown, repeated clicks do not create duplicate success messages.",
+    "category": "Contact Form",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Test User\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"test.user@example.com\" into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Double Click\" into the subject field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Testing repeated clicks during loading.\" into the message textarea"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Send Message\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Send Message\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"loading spinner\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC055",
+    "title": "Focus moves to email field when email validation fails",
+    "description": "Verifies that after submitting with an invalid email, attention is directed to the email field and error is visible.",
+    "category": "Contact Form",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Test User\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"bad@\" into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Focus Check\" into the subject field"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Testing focus behavior on validation error.\" into the message textarea"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Send Message\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"valid email\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"email field\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC056",
+    "title": "Contact page shows location text",
+    "description": "Verifies the location contact detail is displayed as readable text.",
+    "category": "Contact Information Display",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Location\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Dhaka\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Bangladesh\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC057",
+    "title": "Contact icons are visible alongside contact details",
+    "description": "Verifies that the contact information items include visible icons to aid recognition.",
+    "category": "Contact Information Display",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Email icon\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Phone icon\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Location icon\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC058",
+    "title": "Contact information remains visible after scrolling the page",
+    "description": "Verifies the contact details persist and remain readable after the user scrolls away and back to the section.",
+    "category": "Contact Information Display",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the bottom of the page"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the contact information section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Email\" contact value (email address) is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Phone\" contact value (phone number) is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC059",
+    "title": "Contact page shows all social icons",
+    "description": "Verifies the Contact page displays the GitHub, LinkedIn, Twitter, and Email social icons.",
+    "category": "Social Links",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"Contact\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"GitHub icon\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"LinkedIn icon\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Twitter icon\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Email icon\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC060",
+    "title": "Contact page social icons can be focused via keyboard navigation",
+    "description": "Verifies social icons are reachable using keyboard tab navigation for accessibility.",
+    "category": "Social Links",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Press \"Tab\" key"
+      },
+      {
+        "type": "action",
+        "description": "Press \"Tab\" key"
+      },
+      {
+        "type": "action",
+        "description": "Press \"Tab\" key"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"A social icon shows focus state\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Press \"Tab\" key"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Another social icon shows focus state\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC061",
+    "title": "Clicking GitHub icon on Contact page triggers click feedback and external navigation intent",
+    "description": "Verifies clicking the GitHub icon produces visible click feedback and indicates navigation to GitHub (without validating the placeholder destination as per known limitation).",
+    "category": "Social Links",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"GitHub icon\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click \"GitHub icon\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Click ripple effect\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"GitHub\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC062",
+    "title": "Clicking LinkedIn icon on Contact page triggers click feedback",
+    "description": "Verifies clicking the LinkedIn icon produces visible click feedback (without validating external placeholder URL).",
+    "category": "Social Links",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"LinkedIn icon\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click \"LinkedIn icon\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Click ripple effect\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"LinkedIn\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC063",
+    "title": "Home page hero section displays LinkedIn icon",
+    "description": "Verifies the Home page hero section contains a visible LinkedIn icon link.",
+    "category": "Social Links",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"Portfolio\""
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Hero\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"LinkedIn icon\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Hero social links\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC064",
+    "title": "Footer social links are visible and consistent across pages",
+    "description": "Verifies footer social icons are visible on multiple pages, indicating a shared footer component.",
+    "category": "Social Links",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Footer\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Footer social links\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Contact\" in the site navigation"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Footer\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Footer social links\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC065",
+    "title": "Navbar logo is visible on Home page",
+    "description": "Verifies the Sakib logo appears in the navbar on the Home page.",
+    "category": "Navigation Bar",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Sakib\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"navigation bar\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC066",
+    "title": "Navigate to About via navbar and see active indicator",
+    "description": "Verifies clicking the About link navigates to /about and the About link shows as active.",
+    "category": "Navigation Bar",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"About\" in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/about\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"About\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"About navigation link (active state)\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC067",
+    "title": "Navigate to Contact via navbar and see active indicator",
+    "description": "Verifies clicking the Contact link navigates to /contact and the Contact link shows as active.",
+    "category": "Navigation Bar",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Contact\" in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/contact\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"Contact\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact navigation link (active state)\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC068",
+    "title": "Mobile menu opens and navigates to Skills",
+    "description": "Verifies the mobile menu can be opened and used to navigate to the Skills page.",
+    "category": "Navigation Bar",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"mobile menu\" button in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"mobile menu\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Skills\" in the mobile menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/skills\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Skills navigation link (active state)\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC069",
+    "title": "Mobile menu can be dismissed",
+    "description": "Verifies the mobile menu can be closed after opening (using a close button or the menu toggle).",
+    "category": "Navigation Bar",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"mobile menu\" button in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"mobile menu\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"mobile menu\" button in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"mobile menu\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC070",
+    "title": "Keyboard tab navigation reaches navbar links with visible focus",
+    "description": "Verifies keyboard users can tab to a navbar link and see a visible focus state.",
+    "category": "Navigation Bar",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Press \"Tab\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"focused navigation link\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Press \"Tab\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"focused navigation link\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC071",
+    "title": "Footer quick link navigates to About page",
+    "description": "Verifies the footer is visible on the Home page and the About quick link navigates to the About page.",
+    "category": "Footer",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Quick Links\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"About\" quick link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/about\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"About\""
+      }
+    ]
+  },
+  {
+    "id": "TC072",
+    "title": "Footer quick link navigates to Skills page",
+    "description": "Verifies the footer Skills quick link navigates from Home to the Skills page.",
+    "category": "Footer",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Quick Links\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Skills\" quick link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/skills\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"Skills\""
+      }
+    ]
+  },
+  {
+    "id": "TC073",
+    "title": "Footer quick link navigates to Contact page",
+    "description": "Verifies the footer Contact quick link navigates from Home to the Contact page.",
+    "category": "Footer",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Quick Links\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Contact\" quick link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/contact\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"Contact\""
+      }
+    ]
+  },
+  {
+    "id": "TC074",
+    "title": "Footer brand section content is visible",
+    "description": "Verifies the footer brand information and description text are visible on the Home page.",
+    "category": "Footer",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"footer\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Quick Links\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Contact\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Copyright\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC075",
+    "title": "Footer contact details section is visible",
+    "description": "Verifies the footer contains a visible contact details section with reachable-looking information.",
+    "category": "Footer",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Contact\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Email\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Phone\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Location\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC076",
+    "title": "Footer social media icons are visible",
+    "description": "Verifies that social media icons are present and visible in the footer on the Home page.",
+    "category": "Footer",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Social\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"GitHub social icon\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"LinkedIn social icon\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Twitter social icon\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC077",
+    "title": "Footer copyright information is visible on Home",
+    "description": "Verifies the footer displays a visible copyright line on the Home page.",
+    "category": "Footer",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Copyright\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"All rights reserved\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC078",
+    "title": "Scroll-to-top button appears after scrolling beyond threshold",
+    "description": "Verifies the floating scroll-to-top button becomes visible after scrolling down past the threshold on the Home page.",
+    "category": "Scroll to Top Button",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is not visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the middle of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"↑\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC079",
+    "title": "Clicking scroll-to-top returns to top and hides button near top",
+    "description": "Verifies clicking the button scrolls smoothly to the top and the button fades out when near the top.",
+    "category": "Scroll to Top Button",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the bottom of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Scroll to top\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Shafiqul Islam Sakib\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC080",
+    "title": "Button remains hidden below threshold and appears only after additional scrolling",
+    "description": "Verifies the button stays hidden when scrolling less than the threshold and then appears after crossing it.",
+    "category": "Scroll to Top Button",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll down a small amount (about one to two viewport heights)"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is not visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll further down until well past the middle of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC081",
+    "title": "Button hides again after manually returning near top without clicking",
+    "description": "Verifies the button fades out when the user scrolls back near the top of the page.",
+    "category": "Scroll to Top Button",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the bottom of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the top of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC082",
+    "title": "Scroll-to-top button remains usable after repeated scroll cycles",
+    "description": "Verifies the button can be used multiple times in the same session without getting stuck visible or hidden.",
+    "category": "Scroll to Top Button",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the bottom of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Scroll to top\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is not visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the bottom of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC083",
+    "title": "Button is visible on scroll but does not obscure core hero content at top",
+    "description": "Verifies that after using the button to return to top, the hero content is clearly visible and the button is hidden.",
+    "category": "Scroll to Top Button",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the middle of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Scroll to top\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Shafiqul Islam Sakib\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Scroll to top\" button is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC084",
+    "title": "Loading screen appears on first visit to the home page",
+    "description": "Verifies the initial loader overlay is shown when opening the site root and includes the loading UI elements.",
+    "category": "Loading Screen",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Loading\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"0%\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"progress bar\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"animated logo\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC085",
+    "title": "Progress bar reaches 100% during loading sequence",
+    "description": "Verifies the progress indicator completes and shows 100% before the loader is dismissed.",
+    "category": "Loading Screen",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Loading\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Wait for text \"100%\" to appear"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"100%\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"progress bar\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC086",
+    "title": "Animated logo is visible during the loading screen",
+    "description": "Verifies the floating/animated logo element is present while the loading overlay is shown.",
+    "category": "Loading Screen",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Loading\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"animated logo\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Wait for text \"100%\" to appear"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"animated logo\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC087",
+    "title": "Reload behavior: page content may load directly without loader (cached resources)",
+    "description": "Verifies that on a subsequent visit/reload the page can render without showing the loading overlay, per known behavior in development/cached scenarios.",
+    "category": "Loading Screen",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Wait for element \"hero section\" to appear"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"hero section\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Loading\" is not visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/\""
+      }
+    ]
+  },
+  {
+    "id": "TC088",
+    "title": "Home to About page transition shows overlay and completes on /about",
+    "description": "Verifies that navigating from Home to About triggers a visible transition overlay and results in About content being shown on the /about route.",
+    "category": "Page Transitions",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/\""
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"About\" link in the site navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/about\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"About\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC089",
+    "title": "About to Skills page transition completes and Skills content is visible",
+    "description": "Verifies transition behavior when navigating from About to Skills and ensures the Skills page renders after the animation completes.",
+    "category": "Page Transitions",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/about\""
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Skills\" link in the site navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/skills\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Skills\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC090",
+    "title": "Skills to Contact page transition completes and Contact content is visible",
+    "description": "Verifies transition behavior when navigating from Skills to Contact and confirms Contact page content is visible after transition.",
+    "category": "Page Transitions",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /skills"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/skills\""
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Contact\" link in the site navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/contact\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Contact\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC091",
+    "title": "Contact to Home page transition completes and Home content is visible",
+    "description": "Verifies transition behavior when navigating back to Home and confirms Home page content is visible after transition completes.",
+    "category": "Page Transitions",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/contact\""
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Home\" link in the site navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Hero section\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC092",
+    "title": "Rapid navigation still results in correct final page and no stuck overlay",
+    "description": "Verifies that quick successive navigation does not leave the overlay stuck and the final destination page renders correctly.",
+    "category": "Page Transitions",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"About\" link in the site navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Skills\" link in the site navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/skills\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Skills\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC093",
+    "title": "Transition overlay appears on each navigation (consistency check)",
+    "description": "Verifies that the transition overlay consistently appears when navigating between multiple pages in sequence.",
+    "category": "Page Transitions",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"About\" link in the site navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Contact\" link in the site navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/contact\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"page transition gradient overlay\" is not visible"
+      }
+    ]
+  }
+]

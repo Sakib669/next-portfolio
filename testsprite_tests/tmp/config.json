@@ -1,0 +1,18 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "next-js-portfolio-website",
+    "projectPath": "C:\\Users\\Sakib\\Desktop\\Projects\\next-js-portfolio-website",
+    "testIds": [],
+    "additionalInstruction": "",
+    "serverMode": "development",
+    "envs": {
+      "API_KEY": "sk-user-1CC_xxt_1M7BR8q6h3Nwuv0gPqrPxE2vC0oFBzF_b-2Si8hXd6eX1bfKRuZYZlpmcpbznGDOXxfwd6GhCRsrrq5q1o0kV4YIEfbgIoMLgluhYORPVhayPfzgKJE1fUA9oO0"
+    }
+  },
+  "serverPort": 62847,
+  "proxy": "http://0492001a-9abf-467a-b619-accb73798a01:ystXfRYbTjonh7tAxB14qqVBaN7oOzoK@tun.testsprite.com:8080"
+}

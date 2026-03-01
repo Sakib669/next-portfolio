@@ -1,0 +1,286 @@
+version: "2"
+type: frontend
+tech_stack:
+  - TypeScript
+  - Next.js 16
+  - React 19
+  - Tailwind CSS 4
+  - CSS Animations
+routes:
+  - path: /
+    file: app/page.tsx
+    auth_required: false
+    description: Home page with hero section, typing animation, particles background, statistics counters, and featured projects preview
+  - path: /about
+    file: app/about/page.tsx
+    auth_required: false
+    description: About page with personal story, project showcase, education details, and languages
+  - path: /skills
+    file: app/skills/page.tsx
+    auth_required: false
+    description: Skills page with animated skill bars, technology grid with icons, and core competencies
+  - path: /contact
+    file: app/contact/page.tsx
+    auth_required: false
+    description: Contact page with contact form, contact information, social links, and availability status
+features:
+  - name: Hero Section with Animations
+    description: Dynamic hero section with typing animation showing multiple roles, particles background, floating gradient blobs, and CTA buttons
+    files:
+      - app/page.tsx
+      - components/TypingAnimation.tsx
+      - components/ParticlesBackground.tsx
+    entry_route: /
+    user_interactions:
+      - View animated gradient text for name
+      - See typing animation cycling through roles (Full Stack Developer, React Expert, Node.js Developer, UI/UX Enthusiast)
+      - Observe interactive particle background
+      - Click View My Work button to navigate to skills page
+      - Click Get In Touch button to navigate to contact page
+      - Click social media icons (GitHub, LinkedIn, Email)
+      - Scroll down to see scroll indicator animation
+    api_calls: []
+    auth_required: false
+  - name: Statistics Counter Animation
+    description: Animated counters showing years of experience, projects completed, technologies mastered, and client satisfaction
+    files:
+      - app/page.tsx
+      - components/CounterAnimation.tsx
+    entry_route: /
+    user_interactions:
+      - Scroll to statistics section
+      - Watch counters animate from 0 to target values when visible
+      - View icon animations for each statistic
+    api_calls: []
+    auth_required: false
+  - name: Featured Projects Preview
+    description: Preview of three main projects (MernEats, Bistro Boss, LearnGo) with technology badges and hover effects
+    files:
+      - app/page.tsx
+      - components/TechIcon.tsx
+    entry_route: /
+    user_interactions:
+      - View project cards with gradient backgrounds
+      - Hover over project cards to see lift effect
+      - See technology badges with icons (React, Node.js, MongoDB, etc.)
+      - Hover over technology badges to see scale animation
+      - Click View All Projects button
+    api_calls: []
+    auth_required: false
+  - name: About Page Personal Story
+    description: Detailed personal story, profile image placeholder with gradient, and animated content sections
+    files:
+      - app/about/page.tsx
+    entry_route: /about
+    user_interactions:
+      - View animated profile image with gradient background
+      - Read personal story about background and journey
+      - See floating animation on profile card
+      - Hover over profile card to see glow effect
+    api_calls: []
+    auth_required: false
+  - name: Project Showcase
+    description: Detailed showcase of three major projects with descriptions, features, and technology stacks
+    files:
+      - app/about/page.tsx
+      - components/TechIcon.tsx
+    entry_route: /about
+    user_interactions:
+      - View MernEats project details with features and tech stack
+      - View Bistro Boss project details with features and tech stack
+      - View LearnGo project details with features and tech stack
+      - Hover over project cards to see border color change
+      - See Live badges on active projects
+      - Hover over technology badges to see scale animation
+    api_calls: []
+    auth_required: false
+  - name: Education and Languages
+    description: Display education details and language proficiencies with progress indicators
+    files:
+      - app/about/page.tsx
+    entry_route: /about
+    user_interactions:
+      - View education details (B.Sc. in Electrical and Electronics Engineering)
+      - See institution and expected graduation year
+      - View language proficiencies (English, Bengali, Hindi)
+      - See proficiency levels for each language
+    api_calls: []
+    auth_required: false
+  - name: Animated Skill Bars
+    description: Skill bars that animate and fill when scrolled into view, organized by categories (Frontend, Backend, Tools, Specializations)
+    files:
+      - app/skills/page.tsx
+      - components/SkillBar.tsx
+      - components/TechIcon.tsx
+    entry_route: /skills
+    user_interactions:
+      - Scroll to skills section
+      - Watch skill bars animate from 0% to skill level when visible
+      - See shimmer effect on skill bars during animation
+      - View technology icons next to each skill name
+      - Hover over skill cards to see shadow increase
+      - View skill percentage values
+    api_calls: []
+    auth_required: false
+  - name: Technology Grid
+    description: Interactive grid showcasing all technologies with icons and hover effects
+    files:
+      - app/skills/page.tsx
+      - components/TechIcon.tsx
+    entry_route: /skills
+    user_interactions:
+      - View grid of 18 technologies with custom icons
+      - Hover over technology cards to see scale and shadow effects
+      - See gradient sweep animation on hover
+      - View technology names below icons
+      - Observe staggered fade-in animation on page load
+    api_calls: []
+    auth_required: false
+  - name: Core Competencies
+    description: Display of key competencies with icons and descriptions
+    files:
+      - app/skills/page.tsx
+    entry_route: /skills
+    user_interactions:
+      - View competency cards (Full Stack Development, Payment Integration, State Management, etc.)
+      - Hover over cards to see lift effect
+      - See icons for each competency
+      - Read competency descriptions
+    api_calls: []
+    auth_required: false
+  - name: Contact Form
+    description: Functional contact form with validation, animations, and success feedback
+    files:
+      - app/contact/page.tsx
+    entry_route: /contact
+    user_interactions:
+      - Fill in name field
+      - Fill in email field
+      - Fill in subject field
+      - Fill in message textarea
+      - See focus animations on input fields
+      - Click Send Message button
+      - See loading spinner during submission
+      - View success message after submission
+      - See form reset after successful submission
+    api_calls: []
+    auth_required: false
+  - name: Contact Information Display
+    description: Display of contact details with icons and hover effects
+    files:
+      - app/contact/page.tsx
+    entry_route: /contact
+    user_interactions:
+      - View email address with clickable mailto link
+      - View phone number with clickable tel link
+      - View location (Dhaka, Bangladesh)
+      - Hover over icons to see scale animation
+      - Click email link to open email client
+      - Click phone link to initiate call
+    api_calls: []
+    auth_required: false
+  - name: Social Links
+    description: Social media links with icons and hover animations
+    files:
+      - app/contact/page.tsx
+      - components/Footer.tsx
+      - app/page.tsx
+    entry_route: /contact
+    user_interactions:
+      - View GitHub, LinkedIn, Twitter, and Email icons
+      - Hover over social icons to see scale and color change
+      - Click social icons to open respective platforms
+      - See ripple effect on click
+    api_calls: []
+    auth_required: false
+  - name: Navigation Bar
+    description: Responsive navigation with logo, menu items, and mobile menu
+    files:
+      - components/Navbar.tsx
+    entry_route: /
+    user_interactions:
+      - View Sakib logo with gradient animation
+      - Click navigation links (Home, About, Skills, Contact)
+      - See active page indicator
+      - Hover over links to see underline animation
+      - Click mobile menu button on small screens
+      - View slide-down mobile menu
+      - Click mobile menu links to navigate
+    api_calls: []
+    auth_required: false
+  - name: Footer
+    description: Footer with brand info, quick links, contact details, and social media
+    files:
+      - components/Footer.tsx
+    entry_route: /
+    user_interactions:
+      - View brand description
+      - Click quick links to navigate pages
+      - View contact information
+      - Click social media icons
+      - Hover over links to see color transitions
+      - View copyright information
+    api_calls: []
+    auth_required: false
+  - name: Scroll to Top Button
+    description: Floating button that appears on scroll and returns user to top of page
+    files:
+      - components/ScrollToTop.tsx
+    entry_route: /
+    user_interactions:
+      - Scroll down more than 300px
+      - See button fade in from bottom right
+      - Hover over button to see scale effect
+      - Click button to smoothly scroll to top
+      - See button fade out when near top
+    api_calls: []
+    auth_required: false
+  - name: Loading Screen
+    description: Initial loading screen with progress bar and animated logo
+    files:
+      - components/LoadingScreen.tsx
+    entry_route: /
+    user_interactions:
+      - View loading screen on initial page load
+      - Watch progress bar animate from 0% to 100%
+      - See floating logo animation
+      - Watch loading screen fade out when complete
+    api_calls: []
+    auth_required: false
+  - name: Custom Cursor Effect
+    description: Custom animated cursor with ring and dot (desktop only)
+    files:
+      - components/CursorEffect.tsx
+    entry_route: /
+    user_interactions:
+      - Move mouse to see custom cursor ring and dot
+      - Hover over clickable elements to see ring scale up
+      - Observe smooth cursor trail effect
+      - See cursor hidden on mobile devices
+    api_calls: []
+    auth_required: false
+  - name: Page Transitions
+    description: Smooth page transition animations when navigating between routes
+    files:
+      - components/PageTransition.tsx
+    entry_route: /
+    user_interactions:
+      - Click navigation links
+      - See gradient overlay fade in
+      - Watch new page content fade in
+      - Experience smooth transition between pages
+    api_calls: []
+    auth_required: false
+known_limitations:
+  - issue: Contact form submission is simulated with setTimeout, not connected to backend API
+    location: app/contact/page.tsx
+    impact: Form submissions are not actually sent or stored, only UI feedback is shown
+  - issue: Social media links use placeholder URLs (github.com, linkedin.com)
+    location: components/Footer.tsx, app/contact/page.tsx, app/page.tsx
+    impact: Social links do not navigate to actual profile pages
+  - issue: View All Projects button has no destination
+    location: app/page.tsx
+    impact: Button does not navigate to a projects page (page does not exist)
+  - issue: No actual profile image, using gradient placeholder
+    location: app/about/page.tsx
+    impact: Profile section shows initials instead of real photo
